@@ -7,6 +7,23 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.circle_attribute{
+    position: absolute;
+    z-index: 3;
+    top: 405px;
+    left: calc(48% - 100px)
+}
+
+#circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+}
+
+
+
 .box1, .box2, .box3 {
     height: 400px;
     background-color: rgb(153, 214, 255);
@@ -27,6 +44,7 @@ body {
     flex: 70%;
     margin: 0 50px 0 0.5px; 
     position: relative; 
+    z-index: 1;
 }
 
 img {
@@ -40,9 +58,6 @@ img {
     z-index: 2; 
 }
 
-.box4 {
-    z-index: 1; 
-}
 
 @media screen and (max-width: 1680px) {
     .box1, .box2, .box3 {
